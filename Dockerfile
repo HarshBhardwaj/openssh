@@ -5,4 +5,6 @@ RUN echo "Creating base ubuntu image" && \
     apt install -y vim sudo curl openssh-server
 COPY start /usr/bin/start
 RUN chmod +x /usr/bin/start
-CMD [ "start" ]
+COPY access /usr/bin/access
+RUN chmod +x /usr/bin/access
+CMD [ "start"] [ "access" ]

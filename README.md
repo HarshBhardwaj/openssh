@@ -16,6 +16,7 @@ After cloning this repository to your local machine, you will need to:
 - Launch terminal (mac)
 - Navigate to the directory, where you cloned this repository
 - Execute the following command in the terminal: `make build-n-run`
+- Once you are in the container, you can run the following command to ssh: `access ${user} ${host_name}`
 
 ## Commands ##
 - `make build` will build the base image
