@@ -1,5 +1,6 @@
 FROM ubuntu:18.04 as base
-RUN echo "Creating base ubuntu image" && \
+ARG TARGETPLATFORM
+RUN echo "Creating base image for $TARGETPLATFORM" && \
     apt update && \
     apt upgrade && \
     apt install -y vim sudo curl openssh-server
